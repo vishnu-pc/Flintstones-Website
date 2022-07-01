@@ -35,10 +35,10 @@ yarn-error.log*
 *.tsbuildinfo
 
 # Content
-*.jpg
-*.pdf
-*.docx
-*.png
-*.svg
-*.mp4
+# *.jpg
+# *.pdf
+# *.docx
+# *.png
+# *.svg
+# *.mp4
 
