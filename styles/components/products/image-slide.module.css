@@ -1,0 +1,40 @@
+.container {
+    margin-bottom: 30px;
+}
+
+.title {
+    color: rgb(201, 160, 48);
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    height: 20vh;
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .imageWrapper {
+        width: 30vw;
+        height: 30vh;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,52 @@
+.section {
+    margin: 50px 0;
+}
+
+.parallaxBoxWrapper {
+    display: flex;
+    height: 20vh;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin: 10% 0;
+}
+
+.parallaxBoxWrapper:hover > .parallaxBoxHeader {
+    transition: all .8s;
+    color: black;
+    background-color: rgb(201, 160, 48);
+}
+
+.parallaxBox {
+    background-attachment: fixed;
+    height: 100%;
+    width: 55%;
+}
+
+.parallaxBoxHeader {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    color: rgb(201, 160, 48);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    .parallaxBoxWrapper {
+        height: 30vh;
+    }
+
+    .parallaxBoxHeader {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .parallaxBoxWrapper {
+        height: 40vh;
+    }
+}

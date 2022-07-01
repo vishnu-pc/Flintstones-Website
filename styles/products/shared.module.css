@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    padding: 0 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.bigTitle {
+    display: none;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+        padding: 0 50px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .bigTitle {
+        display: flex;
+        width: 20vw;
+        height: 100%;
+        align-items: center;
+        font-size: 200px;
+        transform: rotate(-90deg);
+    }
+
+    .slidesContainer {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+}

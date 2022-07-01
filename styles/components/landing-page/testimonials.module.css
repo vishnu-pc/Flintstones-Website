@@ -1,0 +1,40 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carouselItem {
+    padding: 0 20%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .carouselItem {
+        font-size: 24px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .section {
+        margin: 200px 0;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carouselItem {
+        padding: 0 30%;
+    }
+}
+

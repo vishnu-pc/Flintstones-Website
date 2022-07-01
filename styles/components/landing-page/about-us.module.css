@@ -1,0 +1,50 @@
+@keyframes background-shift-about-us {
+    0% {
+        background-position-x: 0%;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+}
+
+.aboutUs {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background-image: url('/images/Background.png');
+    background-size: 200% 101%;
+    animation-name: background-shift-about-us;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.aboutUsText {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .aboutUsText {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .aboutUs {
+        padding: 150px;
+        background-size: 120% 101%;
+    }
+
+    .aboutUsText {
+        font-size: 26px;
+    }
+}
+

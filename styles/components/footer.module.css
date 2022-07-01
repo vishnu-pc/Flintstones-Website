@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    height: 80px;
+}
+
+.trademark {
+    font-size: 12px;
+}
+
+.logoContainer {
+    width: 20px;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        height: 100px;
+    }
+
+    .trademark {
+        font-size: 18px;
+    }
+
+    .logoContainer {
+        display: block;
+        width: 40px;
+    }
+
+    .socialLinks {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer {
+        height: 200px;
+        padding: 0 50px;
+    }
+}

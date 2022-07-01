@@ -1,0 +1,328 @@
+@import "~bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=PT+Serif:ital@1&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.monserrat {
+  font-family: "Monserrat", sans-serif;
+}
+
+.pt-serif {
+  font-family: "PR Serif", serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #1d1d1b !important;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+}
+
+.landing-section-header {
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(201, 160, 48);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.landing-section-header:hover {
+  transition: all 1s;
+  transform: scale(110%);
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-section-header {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .landing-section-header {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+.project1 {
+  background-image: url('/images/Project1.jpg');
+  background-size: 60%;
+  background-position: right bottom;
+}
+
+.project2 {
+  background-image: url('/images/Project2.jpg');
+  background-size: 50%;
+
+}
+
+.project3 {
+  background-image: url('/images/Project3.jpg');
+  background-size: 60%;
+  background-position: right bottom;
+}
+
+.project4 {
+  background-image: url('/images/Project4.jpg');
+  background-position: left bottom;
+}
+
+
+/* TODO: Redo this on component level */
+.contact-us-page {
+  background: url('/images/Background.png');
+  background-color: #1d1d1b;
+  background-size: 120% 70%;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  max-width: 100vw;
+  animation-name: background-shift;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes background-shift {
+  0% {
+    background-position-x: 0%;
+  }
+  50% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0%;
+  }
+}
+.main-text-contact-us {
+  position: relative;
+  top: 10%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  color: white;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 75px;
+  line-height: 91px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.contact-form {
+  background: #353535;
+  position: relative;
+  transform: translate(30%, -5%);
+  width: 30%;
+  height: 80vh;
+  z-index: 6;
+  text-align: center;
+  transition: all 1s;
+}
+/* .contact-form:hover {
+  background: rgb(201, 160, 48);
+}
+.contact-form:hover > .contact-us-text {
+  color: black;
+}
+.contact-form:hover > .name {
+  background-color: #353535;
+}
+.contact-form:hover > .email {
+  background-color: #353535;
+}
+.contact-form:hover > .message {
+  background-color: #353535;
+} */
+.contact-us-text {
+  position: absolute;
+  width: 352px;
+  height: 57px;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 57px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.name {
+  box-sizing: border-box;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25vw;
+  height: 4vw;
+  background: transparent;
+  border: 2px solid rgb(201, 160, 48);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+.email {
+  box-sizing: border-box;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25vw;
+  height: 4vw;
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+  border: 2px solid rgb(201, 160, 48);
+}
+.number {
+  box-sizing: border-box;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25vw;
+  height: 4vw;
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+  border: 2px solid rgb(201, 160, 48);
+}
+.message {
+  box-sizing: border-box;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25vw;
+  height: 8vw;
+  background: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+  border: 2px solid rgb(201, 160, 48);
+}
+::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+  padding: 15px;
+}
+.submit-button {
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25vw;
+  background: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+.contact-us-map {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 20%;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* For tablets: */
+  [class*="contact-form"] {
+    display: block;
+    width: 60%;
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="contact-form"] {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    transform: translate(0%, 0%);
+  }
+  [class*="contact-us-map"] {
+    top: 60%;
+    height: 20%;
+  }
+  [class*="submit-button"] {
+    width: 20vw;
+    height: 4vh;
+    font-size: 1px;
+  }
+
+  [class*="name"] {
+    width: 50vw;
+    height: 4vh;
+  }
+  [class*="email"] {
+    width: 50vw;
+    height: 4vh;
+  }
+  [class*="number"] {
+    width: 50vw;
+    height: 4vh;
+  }
+  [class*="message"] {
+    width: 50vw;
+    height: 8vh;
+  }
+}
