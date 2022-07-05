@@ -5,7 +5,7 @@ import styles from '../styles/components/footer.module.css';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <p className={styles.trademark}>@2022 the bored guys</p>
+            <p className={styles.trademark}>@2022 <a href=''>Atliere Solutions</a></p>
             <span className={styles.logoContainer}>
                 <Image alt="Logo" src={logo}></Image>
             </span>
