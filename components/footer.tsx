@@ -11,7 +11,7 @@ export default function Footer() {
             </span>
             <p className={styles.trademark}>Copyright &#169; 2022 Flintstones.
             {/* <br></br> */}
-            <a href='/'> Powered by Atliere Solutions</a>
+            <a> Powered by Atliere Solutions</a>
             </p>
             <div className={styles.socialLinksSection}>
                 {/* <Instagram />
