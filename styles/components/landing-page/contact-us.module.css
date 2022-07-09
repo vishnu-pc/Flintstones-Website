@@ -1,0 +1,16 @@
+.landingContactSection{
+    position: relative;
+    /* z-index: 10;
+    bottom: 5%;
+    right: 3%; */
+    /* float: right;
+    padding-right: 5%;
+    margin-top: -5% */
+}
+
+.landingContactSection img{
+    width: 60px;
+    background-color: rgba(0,128,0,0.5);
+    padding: 10px;
+    border-radius: 50%;
+}

@@ -8,16 +8,45 @@
 
 .trademark {
     font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+.trademark a{
+    text-decoration: none;
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+.trademark a:hover{
+    color: rgb(164, 124, 23);
 }
 
 .logoContainer {
     width: 20px;
+    padding-top: 10px;
 }
 
 .socialLinks {
     display: flex;
     justify-content: space-between;
     width: 30%;
+}
+
+.socialLinksSection {
+    display: flex;
+}
+
+.socialLinksNodes {
+    position: relative;
+    padding: 0.7vw;
+}
+
+.socialLinksNodes img{
+    width: 30px;
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -36,6 +65,10 @@
 
     .socialLinks {
         width: 10%;
+    }
+
+    .socialLinksNodes img{
+        width: 75px;
     }
 }
 

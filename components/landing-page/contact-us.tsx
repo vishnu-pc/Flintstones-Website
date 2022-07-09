@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {Button} from 'react-bootstrap';
 import {init, send} from '@emailjs/browser';
+import styles from '../../styles/components/landing-page/contact-us.module.css';
 
 export default function ContactUs() {
     init('QF3SvIB3v04g8EwuB');
@@ -37,7 +38,7 @@ export default function ContactUs() {
     return (
         <div className="contact-us-page">
             <div className="contact-form">
-                <div className="contact-us-text">Contact Us</div>
+                <div className="contact-us-text">Email Us</div>
                 <input
                     placeholder="Name"
                     className="name"
@@ -81,6 +82,12 @@ export default function ContactUs() {
                     tabIndex={0}
                 ></iframe>
             </div>
+
+            {/* <a href='https://wa.me/919880064325'>
+                <div className={styles.landingContactSection}>
+                    <img src="./images/WhatsApp.svg.webp"></img><br />
+                </div>
+            </a> */}
         </div>
     );
 }
