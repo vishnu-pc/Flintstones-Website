@@ -20,17 +20,17 @@ export default function Footer() {
                 <Whatsapp /> */}
                 <a href='https://www.instagram.com/_flintstones__/'>
                     <div className={styles.socialLinksNodes}>
-                        <img src="./images/instagramlogo.jpg"></img><br />
+                        <img src="./images/instagram-logo.jpg"></img><br />
                     </div> 
                 </a>
                 <a href='https://www.facebook.com/flintstones2/'>
                     <div className={styles.socialLinksNodes}>
-                        <img src="./images/facebook-icon-2.png"></img><br />
+                        <img src="./images/facebook-logo.png"></img><br />
                     </div>
                 </a>
                 <a href='https://www.linkedin.com/company/flintstones/about/'>
                     <div className={styles.socialLinksNodes}>
-                        <img src="./images/linkedinlogo.webp"></img><br />
+                        <img src="./images/linkedin-logo.webp"></img><br />
                     </div>
                 </a>
                 <a href='https://wa.me/919880064325'>
