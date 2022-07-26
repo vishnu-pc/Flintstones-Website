@@ -9,6 +9,7 @@ export default function Header() {
                 <Link href={'/about'}><p className={styles.navLink}>About</p></Link>
                 <Link href={'/products'}><p className={styles.navLink}>Products</p></Link>
                 <Link href={'/portfolio'}><p className={styles.navLink}>Portfolio</p></Link>
+                <Link href={'/moodboard'}><p className={styles.navLink}>Moodboard</p></Link>
             </nav>
         </header>
     );
