@@ -59,7 +59,7 @@ export default function Moodboard() {
           if(elmnt){elmnt.onmousedown = dragMouseDown;}
         
       
-        function dragMouseDown(e) {
+        function dragMouseDown(e:any) {
           e = e || window.event;
           e.preventDefault();
           // get the mouse cursor position at startup:
@@ -70,7 +70,7 @@ export default function Moodboard() {
           document.onmousemove = elementDrag;
         }
       
-        function elementDrag(e) {
+        function elementDrag(e:any) {
           e = e || window.event;
           e.preventDefault();
           // calculate the new cursor position:
