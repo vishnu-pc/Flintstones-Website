@@ -17,12 +17,12 @@ export default function Moodboard() {
   const[path5,setpath5]=useState<string>()
   const[path6,setpath6]=useState<string>()
    
-  const[div1,setdiv1]=useState()
-  const[div2,setdiv2]=useState()
-  const[div3,setdiv3]=useState()
-  const[div4,setdiv4]=useState()
-  const[div5,setdiv5]=useState()
-  const[div6,setdiv6]=useState()
+  const[div1,setdiv1]=useState<any>()
+  const[div2,setdiv2]=useState<any>()
+  const[div3,setdiv3]=useState<any>()
+  const[div4,setdiv4]=useState<any>()
+  const[div5,setdiv5]=useState<any>()
+  const[div6,setdiv6]=useState<any>()
 
     useEffect(() => {
         let x= document.cookie.split(";")
@@ -112,22 +112,22 @@ export default function Moodboard() {
                        </Col> */}
 
                        <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={dragElement(div1)}>
-                       <img src={path1}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:"5px solid white"}}/>
+                       <img src={path1}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
                        <div  id="div2"style={{height:"30vh", width:"20vw", left:"20%",position:"absolute", borderRadius:"50%"}}onDrag={dragElement(div2)}>
-                       <img src={path2}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:"5px solid white"}}/>
+                       <img src={path2}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
                        </div>
                        <div  id="div3"style={{height:"20vh", width:"30vw", left:"20%",top:"50%", position:"absolute"}}onDrag={dragElement(div3)}>
-                       <img src={path3}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:"5px solid white"}}/>
+                       <img src={path3}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
                        <div  id="div4"style={{height:"20vh", width:"30vw", left:"50%",top:"50%", position:"absolute"}} onDrag={dragElement(div4)}>
-                       <img src={path4}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:"5px solid white"}}/>
+                       <img src={path4}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
                        <div  id="div5"style={{height:"30vh", width:"20vw", left:"40%",top:"60%",position:"absolute", }}onDrag={dragElement(div5)}>
-                       <img src={path5}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:"5px solid white"}}/>
+                       <img src={path5}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
                        </div>
                        <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}onDrag={dragElement(div6)}>
-                       <img src={path6}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:"5px solid white"}}/>
+                       <img src={path6}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
                    </Row>
              
