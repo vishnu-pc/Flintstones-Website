@@ -111,22 +111,22 @@ export default function Moodboard() {
                       <img src={path3}width="100%"/>
                        </Col> */}
 
-                       <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={dragElement(div1)}>
+                       <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={()=>dragElement(div1)}>
                        <img src={path1}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                       <div  id="div2"style={{height:"30vh", width:"20vw", left:"20%",position:"absolute", borderRadius:"50%"}}onDrag={dragElement(div2)}>
+                       <div  id="div2"style={{height:"30vh", width:"20vw", left:"20%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div2)}>
                        <img src={path2}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
                        </div>
-                       <div  id="div3"style={{height:"20vh", width:"30vw", left:"20%",top:"50%", position:"absolute"}}onDrag={dragElement(div3)}>
+                       <div  id="div3"style={{height:"20vh", width:"30vw", left:"20%",top:"50%", position:"absolute"}}onDrag={()=>dragElement(div3)}>
                        <img src={path3}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                       <div  id="div4"style={{height:"20vh", width:"30vw", left:"50%",top:"50%", position:"absolute"}} onDrag={dragElement(div4)}>
+                       <div  id="div4"style={{height:"20vh", width:"30vw", left:"50%",top:"50%", position:"absolute"}} onDrag={()=>dragElement(div4)}>
                        <img src={path4}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                       <div  id="div5"style={{height:"30vh", width:"20vw", left:"40%",top:"60%",position:"absolute", }}onDrag={dragElement(div5)}>
+                       <div  id="div5"style={{height:"30vh", width:"20vw", left:"40%",top:"60%",position:"absolute", }}onDrag={()=>dragElement(div5)}>
                        <img src={path5}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
                        </div>
-                       <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}onDrag={dragElement(div6)}>
+                       <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div6)}>
                        <img src={path6}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
                    </Row>
