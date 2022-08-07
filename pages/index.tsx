@@ -9,6 +9,7 @@ import Testimonials from '../components/landing-page/testimonials';
 import BrowseProducts from '../components/browse-products';
 import Projects from '../components/landing-page/projects';
 import ContactUs from '../components/landing-page/contact-us';
+import {Link} from 'react-scroll';
 
 const Home: NextPage = () => {
     return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>Flintstones</title>
                 <meta name="description" content="Flintstones official website"/>
+                <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
                 <link rel="icon" href="images/Logo.svg"/>
             </Head>
 
@@ -32,6 +34,18 @@ const Home: NextPage = () => {
                     </div>
                     <h2 className={styles.subHeading}>Live in luxury</h2>
                 </div>
+                <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>
+                    <div className={styles.mouse_scroll}>
+                    <div className={styles.mouse}>
+                        <div className={styles.wheel}></div>
+                    </div>
+                    <div>
+                        <span className= {`${styles.m_scroll_arrows} ${styles.unu}`}></span>
+                        <span className= {`${styles.m_scroll_arrows} ${styles.doi}`}></span>
+                    </div>
+                    </div>
+                </Link>
+                <div className={styles.backgroundVideoTint}></div>
             </section>
             <AboutUs></AboutUs>
             <Categories></Categories>

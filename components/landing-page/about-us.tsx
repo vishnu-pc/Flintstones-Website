@@ -2,7 +2,7 @@ import styles from '../../styles/components/landing-page/about-us.module.css';
 
 export default function AboutUs() {
     return (
-        <section className={styles.aboutUs}>
+        <section className={styles.aboutUs} id='about-us-section'>
             <h2 className="landing-section-header">About us</h2>
             <p className={styles.aboutUsText}>
                 We bring luxury and diversity to the construction industry with our versatile and highly
