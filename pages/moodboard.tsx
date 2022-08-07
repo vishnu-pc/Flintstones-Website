@@ -17,33 +17,36 @@ export default function Moodboard() {
   const[path5,setpath5]=useState<string>()
   const[path6,setpath6]=useState<string>()
    
+
   const[div1,setdiv1]=useState<any>()
   const[div2,setdiv2]=useState<any>()
   const[div3,setdiv3]=useState<any>()
   const[div4,setdiv4]=useState<any>()
   const[div5,setdiv5]=useState<any>()
   const[div6,setdiv6]=useState<any>()
-
+  
     useEffect(() => {
-        let x= document.cookie.split(";")
+       let x= document.cookie.split(";")
         setdiv1(document.getElementById("div1"))
         setdiv2(document.getElementById("div2"))
         setdiv3(document.getElementById("div3"))
         setdiv4(document.getElementById("div4"))
         setdiv5(document.getElementById("div5"))
         setdiv6(document.getElementById("div6"))
-        let y=x[0].split("=")
-        setpath1(y[1])
-        let z=x[1].split("=")
-        setpath2(z[1])
-        let a=x[2].split("=")
-        setpath3(a[1])
-        let b=x[3].split("=")
-        setpath4(b[1])
-        let c=x[4].split("=")
-        setpath5(c[1])
-        let d=x[5].split("=")
-        setpath6(d[1])
+       
+        let y=x[0]?x[0].split("="):null
+        x[0]?setpath1(y[1]):null
+        let z=x[1]?x[1].split("="):null
+        x[1]?setpath2(z[1]):null
+        let a=x[2]?x[2].split("="):null
+        x[2]?setpath3(a[1]):null
+        let b=x[3]?x[3].split("="):null
+        x[3]?setpath4(b[1]):null
+        let c=x[4]?x[4].split("="):null
+        x[4]?setpath5(c[1]):null
+        let d=x[5]?x[5].split("="):null
+        x[5]?setpath6(d[1]):null
+    
       }, []);
  
       
@@ -89,7 +92,9 @@ export default function Moodboard() {
           document.onmousemove = null;
         }
       }
+      
      
+      
     return (
         <>
         
@@ -100,19 +105,11 @@ export default function Moodboard() {
             <section className={styles.categoriesSection}>
                 
                
-                   <Row style={{height:"70vh"}}>
-                       {/* <Col >
-                      <img src={path1}width="100%"/>
-                       </Col>
-                       <Col >
-                      <img src={path2}width="100%"/>
-                       </Col>
-                       <Col >
-                      <img src={path3}width="100%"/>
-                       </Col> */}
+                  { path1?<Row style={{height:"70vh"}}>
+                      
 
-                       <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={()=>dragElement(div1)}>
-                       <img src={path1}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
+                       <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={()=>dragElement(div1)} >
+                      <img src={path1}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
                        <div  id="div2"style={{height:"30vh", width:"20vw", left:"20%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div2)}>
                        <img src={path2}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
@@ -129,9 +126,14 @@ export default function Moodboard() {
                        <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div6)}>
                        <img src={path6}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                   </Row>
-             
+                   </Row>:
+                  <div style={{height:"40vh", position:"relative"}}>
+                   <h1 style={{position:"absolute", top:"30%", left:"13%"}}>Please select Products from the Product page</h1>
+                   </div>
+}
             </section>
+           
+                    
             <br/>
         <br/>
         <br/>
