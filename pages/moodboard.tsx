@@ -105,7 +105,7 @@ export default function Moodboard() {
             <section className={styles.categoriesSection}>
                 
                
-                  { path1?<Row style={{height:"70vh"}}>
+                  { path1?<div style={{height:"70vh"}}>
                       
 
                        <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={()=>dragElement(div1)} >
@@ -126,7 +126,7 @@ export default function Moodboard() {
                        <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div6)}>
                        <img src={path6}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                   </Row>:
+                   </div>:
                   <div style={{height:"40vh", position:"relative"}}>
                    <h1 style={{position:"absolute", top:"30%", left:"13%"}}>Please select Products from the Product page</h1>
                    </div>
