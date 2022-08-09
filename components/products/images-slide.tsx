@@ -1,12 +1,12 @@
 import styles from '../../styles/components/products/image-slide.module.css';
 import Image from 'next/image';
-// import { Button, ButtonGroup, Dropdown, DropdownButton } from 'react-bootstrap';
+ import { Button, ButtonGroup, Dropdown, DropdownButton } from 'react-bootstrap';
 import { BookmarkStarFill, List } from 'react-bootstrap-icons';
 import Moodboard from '../../pages/moodboard';
 import Cookie from "js-cookie"
 import React from 'react';
-// import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
-// import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
+ import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
+ import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
 type Props = {
     images: any[],
     title: string;
@@ -30,7 +30,7 @@ export default function ImagesSlide(props: Props) {
                     props.images.map(image => (
                         <>
                         <div style={{position:"relative", zIndex:"10"}}>
-                        {/* <Dropdown as={ButtonGroup} id="dropdown-basic-button" title="Favourites" style={{position:"absolute", color:"black"}}  >
+                        <Dropdown as={ButtonGroup} id="dropdown-basic-button" title="Favourites" style={{position:"absolute", color:"black"}}  >
                             <DropdownToggle ><BookmarkStarFill /></DropdownToggle>
                             <DropdownMenu>
                                 <Dropdown.Item onClick={()=>storeImage(image.src,1)}>1</Dropdown.Item>
@@ -40,7 +40,7 @@ export default function ImagesSlide(props: Props) {
                                 <Dropdown.Item onClick={()=>storeImage(image.src,5)}>5</Dropdown.Item>
                                 <Dropdown.Item onClick={()=>storeImage(image.src,6)}>6</Dropdown.Item>
                                 </DropdownMenu>
-                        </Dropdown> */}
+                        </Dropdown>
                         </div>
                         <div key={image.src} className={styles.imageWrapper}>
                             <Image layout="fill" objectFit="cover" src={image} alt={image.src} ></Image>
