@@ -10,12 +10,12 @@ import { getCookieParser } from 'next/dist/server/api-utils';
 export default function Moodboard() {
   //localStorage.getItem("favs1")
   
-  const[path1,setpath1]=useState<string>()
-  const[path2,setpath2]=useState<string>()
-  const[path3,setpath3]=useState<string>()
-  const[path4,setpath4]=useState<string>()
-  const[path5,setpath5]=useState<string>()
-  const[path6,setpath6]=useState<string>()
+  const[path1,setpath1]=useState<any>()
+  const[path2,setpath2]=useState<any>()
+  const[path3,setpath3]=useState<any>()
+  const[path4,setpath4]=useState<any>()
+  const[path5,setpath5]=useState<any>()
+  const[path6,setpath6]=useState<any>()
    
 
   const[div1,setdiv1]=useState<any>()
@@ -34,17 +34,17 @@ export default function Moodboard() {
         setdiv5(document.getElementById("div5"))
         setdiv6(document.getElementById("div6"))
        
-        let y=x[0]?x[0].split("="):null
+        let y=x[0]?x[0].split("="):"null"
         x[0]?setpath1(y[1]):null
-        let z=x[1]?x[1].split("="):null
+        let z=x[1]?x[1].split("="):"null"
         x[1]?setpath2(z[1]):null
-        let a=x[2]?x[2].split("="):null
+        let a=x[2]?x[2].split("="):"null"
         x[2]?setpath3(a[1]):null
-        let b=x[3]?x[3].split("="):null
+        let b=x[3]?x[3].split("="):"null"
         x[3]?setpath4(b[1]):null
-        let c=x[4]?x[4].split("="):null
+        let c=x[4]?x[4].split("="):"null"
         x[4]?setpath5(c[1]):null
-        let d=x[5]?x[5].split("="):null
+        let d=x[5]?x[5].split("="):"null"
         x[5]?setpath6(d[1]):null
     
       }, []);
