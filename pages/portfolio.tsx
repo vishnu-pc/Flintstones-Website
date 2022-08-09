@@ -75,7 +75,7 @@ export default function Portfolio() {
         <>
             <section className={styles.section}>
                 <h1 className={styles.header}>Our projects</h1>
-                <Carousel className={styles.carousel}>
+                {/* <Carousel className={styles.carousel}>
                     {
                         images.map((img, idx) => (
                             <Carousel.Item key={idx} className={styles.carouselItem}>
@@ -88,7 +88,7 @@ export default function Portfolio() {
                             </Carousel.Item>
                         ))
                     }
-                </Carousel>
+                </Carousel> */}
                 <div className={styles.quotePage}>
                 </div>
             </section>
