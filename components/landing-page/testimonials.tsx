@@ -1,11 +1,11 @@
-import {Carousel} from 'react-bootstrap';
+//import {Carousel} from 'react-bootstrap';
 import styles from '../../styles/components/landing-page/testimonials.module.css';
 
 export default function Testimonials() {
     return (
         <section className={styles.section}>
             <h2 className="landing-section-header">Testimonials</h2>
-            <Carousel className={styles.carousel}>
+            {/* <Carousel className={styles.carousel}>
                 <Carousel.Item className={styles.carouselItem}>
                     &quot;Amazing collection Plenty of New Designs and Good quality of
                     products. Best price&&quot; - Ashwin S
@@ -21,7 +21,7 @@ export default function Testimonials() {
                     ideas. The backsplash has come very beautiful, and enhances the
                     beauty of our common vanity. I recommend Flintstones.&quot; - Prashanth P
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </section>
     );
 }

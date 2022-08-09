@@ -1,6 +1,6 @@
 import logo from '../public/images/Logo.svg';
 import Image from 'next/image';
-import { Instagram, Facebook, Linkedin, Whatsapp } from 'react-bootstrap-icons';
+//import { Instagram, Facebook, Linkedin, Whatsapp } from 'react-bootstrap-icons';
 import styles from '../styles/components/footer.module.css';
 
 export default function Footer() {

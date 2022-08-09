@@ -7,19 +7,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type":"module"
+    "type": "module"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@react-three/drei": "^9.19.7",
+    "@react-three/fiber": "^8.3.0",
     "bootstrap": "^5.2.0",
+    "camera-controls": "^1.36.1",
     "js-cookie": "^3.0.1",
     "next": "^12.1.6",
     "react": "18.2.0",
-    "react-bootstrap": "^2.5.0",
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.7",
-    "sharp": "^0.30.6"
+    "sharp": "^0.30.6",
+    "three": "^0.143.0"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.2",
@@ -27,6 +30,7 @@
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "@types/react-scroll": "^1.8.3",
+    "@types/three": "^0.143.0",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
     "typescript": "4.7.3"

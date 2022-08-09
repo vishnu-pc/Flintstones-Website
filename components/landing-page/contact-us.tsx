@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {Button} from 'react-bootstrap';
+//import {Button} from 'react-bootstrap';
 import {init, send} from '@emailjs/browser';
 import styles from '../../styles/components/landing-page/contact-us.module.css';
 
@@ -59,9 +59,9 @@ export default function ContactUs() {
                     className="message"
                     onChange={(e) => setMessage(e.target.value)}
                 ></input>
-                <Button variant="dark" className="submit-button" onClick={sendMail}>
+                {/* <Button variant="dark" className="submit-button" onClick={sendMail}>
                     Submit
-                </Button>
+                </Button> */}
             </div>
 
             <div className="contact-us-map">

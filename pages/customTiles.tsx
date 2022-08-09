@@ -1,7 +1,7 @@
 import styles from '../styles/Products.module.css';
 import HeaderWithLogo from '../components/header-with-logo';
 import Image from 'next/image';
-import { Col, Row } from 'react-bootstrap';
+//import { Col, Row } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import first from '../components/products/images-slide';
 import { getCookieParser } from 'next/dist/server/api-utils';

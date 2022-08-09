@@ -1,5 +1,5 @@
 import styles from '../styles/Portfolio.module.css';
-import {Carousel} from 'react-bootstrap';
+//import {Carousel} from 'react-bootstrap';
 import img1 from '../public/images/portfolio/portfolio1.jpg';
 import img2 from '../public/images/portfolio/portfolio2.jpg';
 import img3 from '../public/images/portfolio/portfolio3.jpg';
