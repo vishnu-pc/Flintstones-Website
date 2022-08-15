@@ -72,25 +72,26 @@ a {
 
 .project1 {
   background-image: url('/images/Project1.jpg');
-  background-size: 60%;
-  background-position: right bottom;
+  background-size: 61%;
+  background-position: 0% 10%;
 }
 
 .project2 {
   background-image: url('/images/Project2.jpg');
-  background-size: 50%;
+  background-size: 60%;
+  background-position: -40%;
 
 }
 
 .project3 {
   background-image: url('/images/Project3.jpg');
-  background-size: 60%;
-  background-position: right bottom;
+  background-size: 70%;
+  
 }
 
 .project4 {
   background-image: url('/images/Project4.jpg');
-  background-position: left bottom;
+  background-position: 110%;
 }
 
 

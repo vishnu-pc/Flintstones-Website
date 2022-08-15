@@ -1,12 +1,12 @@
 import styles from '../../styles/components/products/image-slide.module.css';
 import Image from 'next/image';
- import { Button, ButtonGroup, Dropdown, DropdownButton } from 'react-bootstrap';
+// import { Button, ButtonGroup, Dropdown, DropdownButton } from 'react-bootstrap';
 import { BookmarkStarFill, List } from 'react-bootstrap-icons';
 import Moodboard from '../../pages/moodboard';
 import Cookie from "js-cookie"
 import React from 'react';
- import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
- import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
+ //import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
+// import DropdownToggle from 'react-bootstrap/esm/DropdownToggle';
 type Props = {
     images: any[],
     title: string;
@@ -29,18 +29,19 @@ export default function ImagesSlide(props: Props) {
                 {
                     props.images.map(image => (
                         <>
-                        <div style={{position:"relative", zIndex:"10"}}>
-                        <Dropdown as={ButtonGroup} id="dropdown-basic-button" title="Favourites" style={{position:"absolute", color:"black"}}  >
-                            <DropdownToggle ><BookmarkStarFill /></DropdownToggle>
-                            <DropdownMenu>
-                                <Dropdown.Item onClick={()=>storeImage(image.src,1)}>1</Dropdown.Item>
-                                <Dropdown.Item onClick={()=>storeImage(image.src,2)}>2</Dropdown.Item>
-                                <Dropdown.Item onClick={()=>storeImage(image.src,3)}>3</Dropdown.Item>
-                                <Dropdown.Item onClick={()=>storeImage(image.src,4)}>4</Dropdown.Item>
-                                <Dropdown.Item onClick={()=>storeImage(image.src,5)}>5</Dropdown.Item>
-                                <Dropdown.Item onClick={()=>storeImage(image.src,6)}>6</Dropdown.Item>
-                                </DropdownMenu>
-                        </Dropdown>
+                        <div  className={styles.dropdown} style={{position:"relative", zIndex:"10"}}>
+                        <button className={styles.dropbtn} >
+                            
+                            <div className={styles.dropdownContent}>
+                                <a onClick={()=>storeImage(image.src,1)}>1</a>
+                                <a onClick={()=>storeImage(image.src,2)}>2</a>
+                                <a onClick={()=>storeImage(image.src,3)}>3</a>
+                                <a onClick={()=>storeImage(image.src,4)}>4</a>
+                                <a onClick={()=>storeImage(image.src,5)}>5</a>
+                                <a onClick={()=>storeImage(image.src,6)}>6</a>
+                                </div>
+                        </button>
+
                         </div>
                         <div key={image.src} className={styles.imageWrapper}>
                             <Image layout="fill" objectFit="cover" src={image} alt={image.src} ></Image>

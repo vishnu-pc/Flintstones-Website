@@ -14,6 +14,8 @@ import img11 from '../public/images/portfolio/portfolio11.jpg';
 import img12 from '../public/images/portfolio/portfolio12.jpg';
 import img13 from '../public/images/portfolio/portfolio13.jpg';
 import Image from 'next/image';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images = [
     {
@@ -69,26 +71,44 @@ const images = [
         caption: 'Vinay,Yelahanka',
     },
 ];
+const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
 
 export default function Portfolio() {
+    
     return (
         <>
-            <section className={styles.section}>
+            <section className={styles.section}  style={{height:"200vh"}}>
                 <h1 className={styles.header}>Our projects</h1>
-                {/* <Carousel className={styles.carousel}>
+              <div style={{height:"100vh"}}>
+                <Carousel  >
+                
+                            
                     {
                         images.map((img, idx) => (
-                            <Carousel.Item key={idx} className={styles.carouselItem}>
+                           
+                            <div key={idx} className={styles.carouselItem} >
                                 <div className={styles.imageWrapper}>
                                     <Image layout="fill" objectFit="cover" src={img.image} alt={img.caption}></Image>
                                 </div>
-                                <Carousel.Caption>
+                                <div >
                                     <h3>{img.caption}</h3>
-                                </Carousel.Caption>
-                            </Carousel.Item>
+                                </div>
+                            </div>
+                           
                         ))
                     }
-                </Carousel> */}
+      
+                     
+                </Carousel>
+                </div>
+
+                
                 <div className={styles.quotePage}>
                 </div>
             </section>

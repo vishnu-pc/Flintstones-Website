@@ -6,6 +6,7 @@
     background: url('/images/ProductBackground_final.jpg') fixed ;
     filter: grayscale(80%);
     cursor: pointer;
+    background-size:50%;
 }
 
 .section:hover {

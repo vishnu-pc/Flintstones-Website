@@ -59,9 +59,9 @@ export default function ContactUs() {
                     className="message"
                     onChange={(e) => setMessage(e.target.value)}
                 ></input>
-                {/* <Button variant="dark" className="submit-button" onClick={sendMail}>
+                <button type="button"  className="btn btn-outline-dark submit-button" onClick={sendMail}>
                     Submit
-                </Button> */}
+                </button>
             </div>
 
             <div className="contact-us-map">

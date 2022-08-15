@@ -50,6 +50,14 @@ const Home: NextPage = () => {
             <AboutUs></AboutUs>
             <Categories></Categories>
             <Testimonials></Testimonials>
+            <div className="sketchfab-embed-wrapper"
+            style={{height:"100vh"}}
+            > <iframe title="Flinstones model" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1800" height="600" src="https://sketchfab.com/models/b28c1cee103f4fe29cfd393bf825a3ec/embed?ui_theme=dark"> </iframe>
+    
+    
+    </div>
+    
+
             <BrowseProducts></BrowseProducts>
             <Projects></Projects>
             <ContactUs></ContactUs>
