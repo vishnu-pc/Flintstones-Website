@@ -5,22 +5,49 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .backgroundVideo {
     position: absolute;
     z-index: 1;
     right: 0;
-    bottom: 0;
+    
+    top:-10;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 110%;
+    overflow-y: hidden;
+
+    
 }
+
+.backgroundImage{
+  background: url("../public/backgroundImage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 87%;
+  
+z-index: 0;
+min-width: 100%;
+    min-height: 110%;
+    animation: hideAnimation 0s  5s;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    min-width: 0;
+    min-height: 0;
+  }
+}
+
 
 .backgroundVideoTint{
   position: absolute;
   height: 100vh;
   width: 100%;
-  z-index: 10;
+  z-index: 0;
   /* background-color: rgba(0, 0, 0, 0.5); */
   background: linear-gradient( rgba(0, 0, 0, 0.3) 90%, rgba(0, 0, 0, 0.5) );
   top: 0;
@@ -81,16 +108,19 @@
 .mouse_scroll {
 	display: block;
   position: absolute;
-	bottom: 10%;
-  left: 49%;
-  transform: translate(-50,-50);
+	top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 11;
   transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 100%;
+  justify-content: center;
+  display:block;
+  height:20vh;
+
 }
 
-.mouse_scroll:hover {
-	transform: scale(1.1);
-}
+
 
 
 .m_scroll_arrows
@@ -105,7 +135,8 @@
   border-right: 2px solid white;
   border-bottom: 2px solid white;
   margin: 0 0 3px 4px;
-  
+  justify-content: center;
+  display: flex;
   width: 16px;
   height: 16px;
 }
@@ -166,6 +197,7 @@
   transform: none;
   border: 2px solid white;
   top: 170px;
+  margin-left: 49%;
 }
 
 .wheel {
@@ -175,7 +207,7 @@
   margin: 5px auto;
   background: rgb(201, 160, 48);
   position: relative;
-  
+  margin-left: 40%;
   height: 4px;
   width: 4px;
   border: 2px solid var(--secondary-color);

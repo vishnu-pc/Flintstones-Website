@@ -10,7 +10,7 @@ export default function Header() {
                 <Link href={'/products'}><p className={styles.navLink}>Products</p></Link>
                 <Link href={'/portfolio'}><p className={styles.navLink}>Portfolio</p></Link>
                 <Link href={'/moodboard'}><p className={styles.navLink}>Moodboard</p></Link>
-                <Link href={'/customTiles'}><p className={styles.navLink}>Custom Tiles</p></Link>
+                {/* <Link href={'/customTiles'}><p className={styles.navLink}>Custom Tiles</p></Link> */}
                
             </nav>
         </header>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import first from '../components/products/images-slide';
 import { getCookieParser } from 'next/dist/server/api-utils';
+import Draggable from 'react-draggable';
 
 
 export default function Moodboard() {
@@ -107,25 +108,36 @@ export default function Moodboard() {
                
                   { path1?<div style={{height:"70vh"}}>
                       
-
-                       <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }} onDrag={()=>dragElement(div1)} >
+                      <Draggable>
+                       <div id="div1"style={{height:"40vh", width:"20vw", left:"40%",position:"absolute" }}  >
                       <img src={path1}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                       <div  id="div2"style={{height:"30vh", width:"20vw", left:"20%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div2)}>
+                       </Draggable>
+                       <Draggable>
+                       <div  id="div2"style={{height:"30vh", width:"20vw", left:"20%",position:"absolute", borderRadius:"50%"}}>
                        <img src={path2}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
                        </div>
-                       <div  id="div3"style={{height:"20vh", width:"30vw", left:"20%",top:"50%", position:"absolute"}}onDrag={()=>dragElement(div3)}>
+                       </Draggable>
+                       <Draggable>
+                       <div  id="div3"style={{height:"20vh", width:"30vw", left:"20%",top:"50%", position:"absolute"}}>
                        <img src={path3}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                       <div  id="div4"style={{height:"20vh", width:"30vw", left:"50%",top:"50%", position:"absolute"}} onDrag={()=>dragElement(div4)}>
+                       </Draggable>
+                       <Draggable>
+                       <div  id="div4"style={{height:"20vh", width:"30vw", left:"50%",top:"50%", position:"absolute"}} >
                        <img src={path4}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
-                       <div  id="div5"style={{height:"30vh", width:"20vw", left:"40%",top:"60%",position:"absolute", }}onDrag={()=>dragElement(div5)}>
+                       </Draggable>
+                       <Draggable>
+                       <div  id="div5"style={{height:"30vh", width:"20vw", left:"40%",top:"60%",position:"absolute", }}>
                        <img src={path5}width="100%" style={{maxWidth:"100%", maxHeight:"100%", borderRadius:"50%",border:" "}}/>
                        </div>
-                       <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}onDrag={()=>dragElement(div6)}>
+                       </Draggable>
+                       <Draggable>
+                       <div  id="div6"style={{height:"40vh", width:"20vw", left:"60%",position:"absolute", borderRadius:"50%"}}>
                        <img src={path6}width="100%" style={{maxWidth:"100%", maxHeight:"100%",border:" "}}/>
                        </div>
+                       </Draggable>
                    </div>:
                   <div style={{height:"40vh", position:"relative"}}>
                    <h1 style={{position:"absolute", top:"30%", left:"13%"}}>Please select Products from the Product page</h1>

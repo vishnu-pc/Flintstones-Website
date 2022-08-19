@@ -10,8 +10,9 @@ import BrowseProducts from '../components/browse-products';
 import Projects from '../components/landing-page/projects';
 import ContactUs from '../components/landing-page/contact-us';
 import {Link} from 'react-scroll';
-
+import wasd from "../public/wasd.png";
 const Home: NextPage = () => {
+    
     return (
         <div className={styles.container}>
             <Head>
@@ -22,24 +23,42 @@ const Home: NextPage = () => {
             </Head>
 
             <section className={styles.hero}>
-                <video className={styles.backgroundVideo} autoPlay loop muted>
+                {/* <video className={styles.backgroundVideo} autoPlay loop muted>
                     <source src="/video/BackgroundVideo.mp4" type="video/mp4"/>
-                </video>
+                </video> */}
+
+    <div className={styles.backgroundVideo}
+    style={{height:"100vh"}}>
+        
+        <div className={styles.backgroundImage}>
+               
+        </div>
+       
+            
+            <iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
+            </iframe>
+            
+              </div>
+    
                 <div className={styles.heroContent}>
-                    <div className={styles.headingContainer}>
+                    {/* <div className={styles.headingContainer}>
                         <h1 className={`${styles.heading} raleway`}>Flintstones</h1>
                         <span className={styles.logoContainer}>
                             <Image className={styles.logo} alt="Logo" src={Logo}/>
                         </span>
                     </div>
-                    <h2 className={styles.subHeading}>Live in luxury</h2>
+                    <h2 className={styles.subHeading}>Live in luxury</h2> */}
                 </div>
                 <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>
+                    
                     <div className={styles.mouse_scroll}>
+                   <div style={{fontWeight:"bolder", marginLeft:"47%"}}>Scroll Down</div> 
                     <div className={styles.mouse}>
-                        <div className={styles.wheel}></div>
+                        <div className={styles.wheel}>
+                            
+                        </div>
                     </div>
-                    <div>
+                    <div style={{paddingLeft:"49%"}}>
                         <span className= {`${styles.m_scroll_arrows} ${styles.unu}`}></span>
                         <span className= {`${styles.m_scroll_arrows} ${styles.doi}`}></span>
                     </div>
@@ -47,15 +66,11 @@ const Home: NextPage = () => {
                 </Link>
                 <div className={styles.backgroundVideoTint}></div>
             </section>
-            <AboutUs></AboutUs>
+           <AboutUs></AboutUs>
             <Categories></Categories>
             <Testimonials></Testimonials>
-            <div className="sketchfab-embed-wrapper"
-            style={{height:"100vh"}}
-            > <iframe title="Flinstones model" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="1800" height="600" src="https://sketchfab.com/models/b28c1cee103f4fe29cfd393bf825a3ec/embed?ui_theme=dark"> </iframe>
-    
-    
-    </div>
+          
+   
     
 
             <BrowseProducts></BrowseProducts>

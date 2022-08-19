@@ -59,7 +59,7 @@ export default function ContactUs() {
                     className="message"
                     onChange={(e) => setMessage(e.target.value)}
                 ></input>
-                <button type="button"  className="btn btn-outline-dark submit-button" onClick={sendMail}>
+                <button type="button"  className="btn btn-dark submit-button" onClick={sendMail}>
                     Submit
                 </button>
             </div>

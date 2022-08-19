@@ -40,8 +40,8 @@
 }
 .dropbtn {
     background: url("../../../public/bookmark-icon-.png") no-repeat;
-    background-size: 150%;
-    background-color: #f9f9f9;
+    background-size: 180%;
+    background-color: transparent;
     background-position-x: 80%;
     color: white;
     padding: 16px;
