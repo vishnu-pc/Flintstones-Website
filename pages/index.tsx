@@ -11,8 +11,35 @@ import Projects from '../components/landing-page/projects';
 import ContactUs from '../components/landing-page/contact-us';
 import {Link} from 'react-scroll';
 import wasd from "../public/wasd.png";
+import { useState , useEffect} from 'react';
 const Home: NextPage = () => {
+    const [windowSize, setWindowSize] = useState({
+        width: 1,
+        height: 1,
+      });
+      function handleResize() {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== 'undefined') {
+      // Handler to call on window resize
+      
     
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+     
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+    
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []); 
     return (
         <div className={styles.container}>
             <Head>
@@ -30,13 +57,15 @@ const Home: NextPage = () => {
     <div className={styles.backgroundVideo}
     style={{height:"100vh"}}>
         
-        <div className={styles.backgroundImage}>
+        {windowSize.width>760?<div className={styles.backgroundImage}>
                
-        </div>
+        </div>:null}
        
             
-            <iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
-            </iframe>
+           { windowSize.width>760?<iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
+            </iframe>:<video className={styles.backgroundVideo} autoPlay loop muted>
+                    <source src="/video/BackgroundVideo.mp4" type="video/mp4"/>
+                </video>}
             
               </div>
     
@@ -52,13 +81,13 @@ const Home: NextPage = () => {
                 <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>
                     
                     <div className={styles.mouse_scroll}>
-                   <div style={{fontWeight:"bolder", marginLeft:"47%"}}>Scroll Down</div> 
+                   <div style={{fontWeight:"bolder", position:"absolute", left:"50.5%",bottom:"30%", transform:"translate(-50%,-50%)"}}>Scroll Down</div> 
                     <div className={styles.mouse}>
                         <div className={styles.wheel}>
                             
                         </div>
                     </div>
-                    <div style={{paddingLeft:"49%"}}>
+                    <div style={{position:"absolute", left:"50%",bottom:"50%", transform:"translate(-50%,-50%)"}}>
                         <span className= {`${styles.m_scroll_arrows} ${styles.unu}`}></span>
                         <span className= {`${styles.m_scroll_arrows} ${styles.doi}`}></span>
                     </div>
