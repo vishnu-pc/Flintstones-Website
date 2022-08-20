@@ -58,7 +58,13 @@ const Home: NextPage = () => {
     style={{height:"100vh"}}>
         
         {windowSize.width>760?<div className={styles.backgroundImage}>
-               
+        <div className={styles.headingContainerOld}>
+                        <h1 className={`${styles.headingOld} raleway`}>Flintstones</h1>
+                        <span className={styles.logoContainerOld}>
+                            <Image className={styles.logo} alt="Logo" src={Logo}/>
+                        </span>
+                    </div>
+                    <h2 className={styles.subHeadingOld}>Live in luxury</h2>
         </div>:null}
        
             
@@ -70,13 +76,18 @@ const Home: NextPage = () => {
               </div>
     
                 <div className={styles.heroContent}>
-                    {/* <div className={styles.headingContainer}>
+                    
+                    {windowSize.width<760?
+                    <>
+                    <div className={styles.headingContainer}>
                         <h1 className={`${styles.heading} raleway`}>Flintstones</h1>
                         <span className={styles.logoContainer}>
                             <Image className={styles.logo} alt="Logo" src={Logo}/>
                         </span>
                     </div>
-                    <h2 className={styles.subHeading}>Live in luxury</h2> */}
+                    <h2 className={styles.subHeading}>Live in luxury</h2>
+                    </>:null}
+                   
                 </div>
                 <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>
                     
