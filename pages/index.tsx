@@ -57,15 +57,17 @@ const Home: NextPage = () => {
     <div className={styles.backgroundVideo}
     style={{height:"100vh"}}>
         
-        {windowSize.width>760?<div className={styles.backgroundImage}>
+        {windowSize.width>760?
+        <>
         <div className={styles.headingContainerOld}>
-                        <h1 className={`${styles.headingOld} raleway`}>Flintstones</h1>
+                        <h1 className={`${styles.headingOld} raleway`}>Flinstones</h1>
                         <span className={styles.logoContainerOld}>
-                            <Image className={styles.logo} alt="Logo" src={Logo}/>
+                            <Image  alt="Logo" src={Logo}/>
                         </span>
                     </div>
-                    <h2 className={styles.subHeadingOld}>Live in luxury</h2>
-        </div>:null}
+                    
+                    </>
+        :null}
        
             
            { windowSize.width>760?<iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
