@@ -19,7 +19,7 @@
     align-items: center;
     padding: 20px;
 
-    background-image: url('/images/Background.png');
+    background-image: url('/images/Background.webp');
     background-size: 200% 101%;
     animation-name: background-shift-about-us;
     animation-duration: 20s;

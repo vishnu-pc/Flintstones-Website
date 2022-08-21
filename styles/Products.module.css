@@ -106,7 +106,7 @@
 
 .quoteWrapper {
     min-height: 30vh;
-    background-image: url('/images/Background.png');
+    background-image: url('/images/Background.webp');
     background-size: 150% 150%;
     animation-name: background-shift-about-us;
     animation-duration: 20s;

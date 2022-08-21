@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background: url('/images/ProductBackground_final.jpg') fixed ;
+    background: url('/images/ProductBackground_final.webp') fixed ;
     filter: grayscale(80%);
     cursor: pointer;
     background-size:50%;

@@ -41,7 +41,7 @@
     bottom: 0;
     width: 100%;
     z-index: 0;
-    background: url('/images/Background.png');
+    background: url('/images/Background.webp');
     background-color: #1d1d1b;
     background-size: 120% 120%;
     height: 50vh;

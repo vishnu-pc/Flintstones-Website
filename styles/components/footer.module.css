@@ -37,11 +37,13 @@
 
 .socialLinksSection {
     display: flex;
+   
 }
 
 .socialLinksNodes {
     position: relative;
-    padding: 0.7vw;
+    padding: 1.3vw;
+    
 }
 
 .socialLinksNodes img{
@@ -67,8 +69,9 @@
         width: 10%;
     }
 
-    .socialLinksNodes img{
-        width: 75px;
+    .socialLinksNodes {
+        transform: scale(2);
+        
     }
 }
 

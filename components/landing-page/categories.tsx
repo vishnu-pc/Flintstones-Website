@@ -10,7 +10,9 @@ export default function Categories() {
         <section className={styles.section}>
             <h2 className="landing-section-header">Categories</h2>
             <div className={styles.categories}>
+            <Link href="/products/bricks">
                 <div className={styles.category}>
+               
                     <div className={styles.categoryImageWrapper}>
                         <Image
                             alt="Bricks category"
@@ -19,35 +21,45 @@ export default function Categories() {
                             objectFit="cover"
                         ></Image>
                     </div>
-                    <Link href="/products/bricks">
+                    
                         <button className={styles.button}>Bricks</button>
-                    </Link>
+
                 </div>
+                </Link>
+                <Link href="/products/murals">
                 <div className={styles.category}>
+                
                     <div className={styles.categoryImageWrapper}>
                         <Image
+                        quality="5"
                             alt="Bricks category"
                             src={Murals}
                             layout="fill"
                             objectFit="cover"
                         ></Image>
                     </div>
-                    <Link href="/products/murals">
+                    
                         <button className={styles.button}>Luxury Products</button>
-                    </Link>
+                   
                 </div>
+                </Link>
+                <Link href="/products/coating">
                 <div className={styles.category}>
+                
                     <div className={styles.categoryImageWrapper}>
-                        <Image alt="Bricks category"
+                        <Image 
+                        quality="5"
+                        alt="Bricks category"
                                src={Coating}
                                layout="fill"
                                objectFit="cover"
                         ></Image>
                     </div>
-                    <Link href="/products/coating">
+                   
                         <button className={styles.button}>Surface Coating</button>
-                    </Link>
+                   
                 </div>
+                </Link>
             </div>
         </section>
     );

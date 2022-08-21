@@ -113,10 +113,11 @@ min-width: 50%;
   margin: 0;
   
   overflow: hidden;
-  background: linear-gradient(90deg, #fff, #fff);
+
+  background: linear-gradient(90deg, rgb(255, 255, 255) 80%, rgb(255, 255, 255));
   background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 2s linear infinite;
+  
+  animation: animate 3s linear;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -124,9 +125,11 @@ min-width: 50%;
 @keyframes animate {
   0% {
     background-position: -500%;
+    background-size: 0%;
   }
   100% {
-    background-position: 500%;
+    background-position: 0%;
+    background-size: 100%;
   }
 }
 

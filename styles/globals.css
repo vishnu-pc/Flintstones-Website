@@ -71,33 +71,33 @@ a {
 }
 
 .project1 {
-  background-image: url('/images/Project1.jpg');
+  background-image: url('/images/Project1.webp');
   background-size: 61%;
   background-position: 0% 10%;
 }
 
 .project2 {
-  background-image: url('/images/Project2.jpg');
+  background-image: url('/images/Project2.webp');
   background-size: 60%;
   background-position: -40%;
 
 }
 
 .project3 {
-  background-image: url('/images/Project3.jpg');
+  background-image: url('/images/Project3.webp');
   background-size: 70%;
   
 }
 
 .project4 {
-  background-image: url('/images/Project4.jpg');
+  background-image: url('/images/Project4.webp');
   background-position: 110%;
 }
 
 
 /* TODO: Redo this on component level */
 .contact-us-page {
-  background: url('/images/Background.png');
+  background: url('/images/Background.webp');
   background-color: #1d1d1b;
   background-size: 120% 70%;
   background-repeat: no-repeat;

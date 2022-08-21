@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <div className={styles.headingContainerOld}>
                         <h1 className={`${styles.headingOld} raleway`}>Flinstones</h1>
                         <span className={styles.logoContainerOld}>
-                            <Image  alt="Logo" src={Logo}/>
+                            <Image  alt="Logo" width="100" height="100" src={Logo}/>
                         </span>
                     </div>
                     
@@ -71,9 +71,14 @@ const Home: NextPage = () => {
        
             
            { windowSize.width>760?<iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
-            </iframe>:<video className={styles.backgroundVideo} autoPlay loop muted>
+            </iframe>:
+            <video className={styles.backgroundVideo} autoPlay loop muted>
                     <source src="/video/BackgroundVideo.mp4" type="video/mp4"/>
-                </video>}
+                </video>
+            //https://sketchfab.com/models/77ebd12971a5445e8b54f43f9eedc4db/embed?camera=0
+            // <iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/77ebd12971a5445e8b54f43f9eedc4db/embed?camera=0&autostart=1&navigation=fps">
+            // </iframe>
+                }
             
               </div>
     
