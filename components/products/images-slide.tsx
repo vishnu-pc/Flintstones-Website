@@ -44,7 +44,7 @@ export default function ImagesSlide(props: Props) {
 
                         </div>
                         <div key={image.src} className={styles.imageWrapper}>
-                            <Image quality="5" width="100" height="100"layout="fill" objectFit="cover" src={image} alt={image.src} ></Image>
+                            <Image quality="80" width="100" height="100"layout="fill" objectFit="cover" src={image} alt={image.src} ></Image>
                             
                         </div>
                         
