@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Logo from '../public/images/Logo.svg';
+import wasd from '../public/wasd.svg';
+
 import AboutUs from '../components/landing-page/about-us';
 import Categories from '../components/landing-page/categories';
 import Testimonials from '../components/landing-page/testimonials';
@@ -10,7 +12,6 @@ import BrowseProducts from '../components/browse-products';
 import Projects from '../components/landing-page/projects';
 import ContactUs from '../components/landing-page/contact-us';
 import {Link} from 'react-scroll';
-import wasd from "../public/wasd.png";
 import { useState , useEffect} from 'react';
 const Home: NextPage = () => {
     const [windowSize, setWindowSize] = useState({
@@ -99,14 +100,19 @@ const Home: NextPage = () => {
                 <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>
                 
                     <div className={styles.mouse_scroll}>
-                    <div style={{fontWeight:"bolder", position:"absolute", left:"50%",bottom:"105%", transform:"translate(-50%,-50%)"}}>Use Mouse and Keyboard to Move</div> 
+                    
                    <div style={{fontWeight:"bolder", position:"absolute", left:"50%",bottom:"30%", transform:"translate(-50%,-50%)"}}>Scroll Down</div> 
                     <div className={styles.mouse}>
                         <div className={styles.wheel}>
                             
                         </div>
                     </div>
+                    {windowSize.width>760?<div style={{fontWeight:"bolder", position:"absolute", right:"-2.5%",top:"70%", transform:"translate(-50%,-50%)"}}>Use Mouse and Keyboard to Move</div>:null }
+                    {windowSize.width>760?<span style={{position:"absolute", top:"-25%", right:"5%"}}>
+                            <Image width="260" height="260" className={styles.logo} alt="Logo" src={wasd} style={{filter:"invert(1)"}}/>
+                        </span>:null}
                     <div style={{position:"absolute", left:"50%",bottom:"50%", transform:"translate(-50%,-50%)"}}>
+                    
                         <span className= {`${styles.m_scroll_arrows} ${styles.unu}`}></span>
                         <span className= {`${styles.m_scroll_arrows} ${styles.doi}`}></span>
                     </div>
