@@ -107,7 +107,7 @@ const Home: NextPage = () => {
                             
                         </div>
                     </div>
-                    {windowSize.width>760?<div style={{fontWeight:"bolder", position:"absolute", right:"-2.5%",top:"55%", transform:"translate(-50%,-50%)"}}>Use Mouse and Keyboard to Move</div>:null }
+                   
                     {windowSize.width>760?<span style={{position:"absolute", top:"-30%", right:"6.5%"}}>
                             <Image width="200" height="200" className={styles.logo} alt="Logo" src={wasd} style={{filter:"invert(1)"}}/>
                         </span>:null}
