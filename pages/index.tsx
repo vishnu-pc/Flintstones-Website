@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Logo from '../public/images/Logo.svg';
-import wasd from '../public/wasd.svg';
+import wasd from '../public/wasd.png';
 
 import AboutUs from '../components/landing-page/about-us';
 import Categories from '../components/landing-page/categories';
@@ -107,9 +107,9 @@ const Home: NextPage = () => {
                             
                         </div>
                     </div>
-                    {windowSize.width>760?<div style={{fontWeight:"bolder", position:"absolute", right:"-2.5%",top:"70%", transform:"translate(-50%,-50%)"}}>Use Mouse and Keyboard to Move</div>:null }
-                    {windowSize.width>760?<span style={{position:"absolute", top:"-25%", right:"5%"}}>
-                            <Image width="260" height="260" className={styles.logo} alt="Logo" src={wasd} style={{filter:"invert(1)"}}/>
+                    {windowSize.width>760?<div style={{fontWeight:"bolder", position:"absolute", right:"-2.5%",top:"55%", transform:"translate(-50%,-50%)"}}>Use Mouse and Keyboard to Move</div>:null }
+                    {windowSize.width>760?<span style={{position:"absolute", top:"-30%", right:"6.5%"}}>
+                            <Image width="200" height="200" className={styles.logo} alt="Logo" src={wasd} style={{filter:"invert(1)"}}/>
                         </span>:null}
                     <div style={{position:"absolute", left:"50%",bottom:"50%", transform:"translate(-50%,-50%)"}}>
                     
