@@ -83,24 +83,27 @@ export default function Portfolio() {
     
     return (
         <>
-            <section className={styles.section}  style={{height:"200vh"}}>
-                <h1 className={styles.header}>Our projects</h1>
-              <div style={{height:"100vh"}}>
+            <section className={styles.section}  style={{height:"120vh", paddingTop:"1%"}}>
+            <h1 style={{position:"absolute", top:"10%"}}className={styles.header}>Our projects</h1>
+              <div style={{height:"50vh", position:"absolute", top:"25%"}}>
+                  
                 <Carousel  >
                 
                             
                     {
                         images.map((img, idx) => (
-                           
+                           <>
+                           <h3>{img.caption}</h3>
                             <div key={idx} className={styles.carouselItem} >
                                 <div className={styles.imageWrapper}>
-                                    <Image layout="fill" objectFit="cover" src={img.image} alt={img.caption}></Image>
+                                    <Image  width="1000" height="1000"objectFit="cover" src={img.image} alt={img.caption}/>
                                 </div>
-                                <div >
-                                    <h3>{img.caption}</h3>
-                                </div>
+                                
                             </div>
-                           
+                            <br/>
+                            <br/>
+                             
+                           </>
                         ))
                     }
       
@@ -109,9 +112,24 @@ export default function Portfolio() {
                 </div>
 
                 
-                <div className={styles.quotePage}>
-                </div>
+                
             </section>
+            {/* <div  style={{position:"absolute", top:"150%"}}className={styles.quotePage}>
+            <div className={styles.quoteWrapper}>
+                <p className={styles.quote}>
+                    &quot; For a house to feel successfully like home, the objects in it must
+                    communicate with one another, respond and balance one another out. &quot; -
+                    Andree Putman
+                </p>
+            </div>
+                </div> */}
+                <div className={styles.quoteWrapper}>
+                <p className={styles.quote}>
+                    &quot; For a house to feel successfully like home, the objects in it must
+                    communicate with one another, respond and balance one another out. &quot; -
+                    Andree Putman
+                </p>
+            </div>
         </>
     );
 }

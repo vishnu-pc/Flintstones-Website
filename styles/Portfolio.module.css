@@ -36,6 +36,26 @@
     width: 100%;
 }
 
+.quoteWrapper {
+    min-height: 30vh;
+    background-image: url('/images/Background.webp');
+    background-size: 150% 150%;
+    animation-name: background-shift-about-us;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10%;
+}
+.quote {
+    color: rgb(201, 160, 48);
+    font-size: 30px;
+}
+
+
 .quotePage {
     position: absolute;
     bottom: 0;

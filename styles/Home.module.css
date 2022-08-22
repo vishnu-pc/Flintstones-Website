@@ -97,7 +97,7 @@ min-width: 50%;
 .headingContainerOld {
   display: flex;
   align-items: center;
-  animation: hideAnimation 0s  10s;
+  animation: hideAnimation 0s  7s;
   animation-fill-mode: forwards;
   position: absolute;
   top: 45%;
@@ -139,7 +139,7 @@ min-width: 50%;
   margin-left: 10px;
   margin-bottom: 100px;
   transition: all 3s;
-  animation: hideAnimation 0s  10s;
+  animation: hideAnimation 0s  7s;
   animation-fill-mode: forwards;
 }
 

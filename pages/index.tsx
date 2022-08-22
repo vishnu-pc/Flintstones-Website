@@ -43,8 +43,8 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Flintstones</title>
-                <meta name="description" content="Flintstones official website"/>
+                <title>Flintstones Bangalore- Leading Stones Manufacturer </title>
+                <meta name="description" content="Flintstones Bangalore official website"/>
                 <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
                 <link rel="icon" href="images/Logo.svg"/>
             </Head>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
         <div className={styles.headingContainerOld}>
                         <h1 className={`${styles.headingOld} raleway`}>Flinstones</h1>
                         <span className={styles.logoContainerOld}>
-                            <Image  alt="Logo" width="100" height="100" src={Logo}/>
+                            <Image  alt="Logo"  src={Logo}/>
                         </span>
                     </div>
                     
