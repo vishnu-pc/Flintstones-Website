@@ -38,7 +38,7 @@ export default function Engineered() {
         <div className={styles.wrapper}>
             <div>
                 <h1 className={styles.title}>Engineered</h1>
-                <h1 className={styles.bigTitle}>Engineered</h1>
+                <h1 style={{fontSize:"150px", top:"20%", position:"relative"}}className={styles.bigTitle}>Engineered</h1>
             </div>
             <div className={styles.slidesContainer}>
                 <ImagesSlide title="3Ds" images={threeDs}></ImagesSlide>
