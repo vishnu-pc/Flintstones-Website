@@ -71,7 +71,7 @@ const Home: NextPage = () => {
        
             
            { windowSize.width>760?<iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
-            </iframe>:
+            </iframe>://https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed
             <video className={styles.backgroundVideo} autoPlay loop muted>
                     <source src="/video/BackgroundVideo.mp4" type="video/mp4"/>
                 </video>
@@ -97,9 +97,10 @@ const Home: NextPage = () => {
                    
                 </div>
                 <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>
-                    
+                
                     <div className={styles.mouse_scroll}>
-                   <div style={{fontWeight:"bolder", position:"absolute", left:"50.5%",bottom:"30%", transform:"translate(-50%,-50%)"}}>Scroll Down</div> 
+                    <div style={{fontWeight:"bolder", position:"absolute", left:"50%",bottom:"105%", transform:"translate(-50%,-50%)"}}>Use Mouse and Keyboard to Move</div> 
+                   <div style={{fontWeight:"bolder", position:"absolute", left:"50%",bottom:"30%", transform:"translate(-50%,-50%)"}}>Scroll Down</div> 
                     <div className={styles.mouse}>
                         <div className={styles.wheel}>
                             
