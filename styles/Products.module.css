@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 7vw;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -52,7 +52,7 @@
     z-index: 1;
     width: 100%;
     text-align: center;
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -187,4 +187,15 @@
     .catalogueDescriptionText {
         font-size: 16px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        font-size: 8vw;
+    }
+
+    .categoryTitle {
+        font-size: 8vw;
+    }
+
 }
