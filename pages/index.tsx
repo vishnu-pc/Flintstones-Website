@@ -58,7 +58,7 @@ const Home: NextPage = () => {
     <div className={styles.backgroundVideo}
     style={{height:"100vh"}}>
         
-        {windowSize.width>760?
+        {/* {windowSize.width>760?
         <>
         <div className={styles.headingContainerOld}>
                         <h1 className={`${styles.headingOld} raleway`}>Flinstones</h1>
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
                     </div>
                     
                     </>
-        :null}
+        :null} */}
        
             
            {//https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
     
                 <div className={styles.heroContent}>
                     
-                    {windowSize.width<760?
+                    {
                     <>
                     <div className={styles.headingContainer}>
                         <h1 className={`${styles.heading} raleway`}>Flintstones</h1>
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                         </span>
                     </div>
                     <h2 className={styles.subHeading}>Live in luxury</h2>
-                    </>:null}
+                    </>}
                    
                 </div>
                 <Link activeClass="active" to="about-us-section" spy={true} smooth={true}>

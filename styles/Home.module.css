@@ -97,13 +97,14 @@ min-width: 50%;
 .headingContainerOld {
   display: flex;
   align-items: center;
-  animation: hideAnimation 0s  7s;
+  /* animation: hideAnimation 0s  7s; */
   animation-fill-mode: forwards;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%,-50%);
   transition: width 4s;
+  z-index: 1000;
  
 }
 
