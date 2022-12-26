@@ -71,15 +71,14 @@ const Home: NextPage = () => {
         :null}
        
             
-           { windowSize.width>760?<iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed?navigation=fps&camera=0&autostart=1">
-            </iframe>://https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed
+           {//https://sketchfab.com/models/ae54cd65533549ca83c60c9fd4d00929/embed
             <video className={styles.backgroundVideo} autoPlay loop muted>
-                    <source src="/video/BackgroundVideo.mp4" type="video/mp4"/>
+                    <source src="/video/BackgroundVideo.webm" />
                 </video>
             //https://sketchfab.com/models/77ebd12971a5445e8b54f43f9eedc4db/embed?camera=0
             // <iframe style={{height:"110%", width:"100%"}} title="Flinstones model" frameBorder="0" allowFullScreen  allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="auto" height="auto" src="https://sketchfab.com/models/77ebd12971a5445e8b54f43f9eedc4db/embed?camera=0&autostart=1&navigation=fps">
             // </iframe>
-                }
+           }
             
               </div>
     
