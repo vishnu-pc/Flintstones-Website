@@ -107,9 +107,9 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                    
-                    {windowSize.width>760?<span style={{position:"absolute", top:"-30%", right:"6.5%"}}>
+                    {/* {windowSize.width>760?<span style={{position:"absolute", top:"-30%", right:"6.5%"}}>
                             <Image width="200" height="200" className={styles.logo} alt="Logo" src={wasd} style={{filter:"invert(1)"}}/>
-                        </span>:null}
+                        </span>:null} */}
                     <div style={{position:"absolute", left:"50%",bottom:"50%", transform:"translate(-50%,-50%)"}}>
                     
                         <span className= {`${styles.m_scroll_arrows} ${styles.unu}`}></span>
