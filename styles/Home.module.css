@@ -17,6 +17,7 @@
     min-width: 100%;
     min-height: 110%;
     overflow-y: hidden;
+    filter: brightness(0.5);
 
     
 }
