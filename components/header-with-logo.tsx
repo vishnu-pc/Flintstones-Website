@@ -9,9 +9,9 @@ export default function HeaderWithLogo(props: Props) {
     return (
         <section className={styles.hero}>
             <h1 className={styles.heroHeader}>{props.header}</h1>
-            <div className={styles.heroLogo}>
+            {/* <div className={styles.heroLogo}>
                 <Image alt="Logo" src={Logo}/>
-            </div>
+            </div> */}
         </section>
     );
 }
