@@ -37,6 +37,7 @@ import slate4 from "../../public/images/slates/slate4.jpg";
 import slate5 from "../../public/images/slates/slate5.jpg";
 import slate6 from "../../public/images/slates/slate6.jpg";
 import slate7 from "../../public/images/slates/slate7.jpg";
+import Head from 'next/head';
 
 const cncs = [
     cnc1,
@@ -86,13 +87,29 @@ const slates = [
 ];
 
 export default function Murals() {
-    return (
+    return (<>
+        <div>
+        <Head>
+            <title>Flintstones Murals: Unleashing Artistry on Your Walls in Bangalore</title>
+            <meta name="description" content="Experience the magic of Flintstones' wall murals in Bangalore. From captivating exterior designs to the contemporary allure of metal murals, our collection spans the artistic spectrum. Immerse yourself in the beauty of stone and fusion murals, all available at our Indira Nagar showroom. Redefine your space with Flintstones' exclusive mural collection."/>
+            <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
+            <link rel="icon" href="images/Logo.svg"/>
+        </Head>
+        </div>
         <div className={styles.wrapper}>
             <div>
                 <h1 className={styles.title}>Murals</h1>
                 <h1 className={styles.bigTitle}>Murals</h1>
             </div>
             <div className={styles.slidesContainer}>
+            <h1 className={styles.h1title}><strong>Flintstones Murals: Bringing Walls to Life in Bangalore
+
+
+</strong>
+</h1>
+
+<h2>Discover the Language of Walls: Stone, Fusion, and Metal Murals at Flintstones
+</h2><br />
                 <ImagesSlide title="CNCs" images={cncs}></ImagesSlide>
                 <ImagesSlide title="Metals" images={metals}></ImagesSlide>
                 <ImagesSlide title="Fusions" images={fusions}></ImagesSlide>
@@ -101,5 +118,5 @@ export default function Murals() {
             </div>
         </div>
 
-    );
+    </>);
 }

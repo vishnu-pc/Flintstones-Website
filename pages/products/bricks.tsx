@@ -30,7 +30,8 @@ import natural6 from '../../public/images/bricks3/natural6.jpg';
 import natural7 from '../../public/images/bricks3/natural7.jpg';
 import natural8 from '../../public/images/bricks3/natural8.jpg';
 import natural9 from '../../public/images/bricks3/natural9.jpg';
-
+import Head from 'next/head';
+import exp from '../public/images/external-link-white.png'; 
 const bricks = [
     brick1,
     brick2,
@@ -68,18 +69,34 @@ const naturals = [
 ];
 
 export default function Bricks() {
-    return (
+    return (<>
+        <div>
+        <Head>
+        <title>Discover the Best Bricks in Bangalore at Flintstones - Your Trusted Brick Supplier</title>
+        <meta name="description" content="Explore a wide range of top-quality bricks in Bangalore at Flintstones. From the finest red bricks to durable cement and clay options, find the perfect solution for your construction needs. Visit us for artificial, concrete, and natural bricks in Bangalore. Serving Indira Nagar and beyond, Flintstones is your go-to brick construction company!"/>
+        <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
+        <link rel="icon" href="images/Logo.svg"/>
+        </Head>
+      
+        </div>
+        
         <div className={styles.wrapper}>
+      
             <div>
+            
                 <h1 className={styles.title}>Bricks</h1>
                 <h1 className={styles.bigTitle}>Bricks</h1>
             </div>
             <div className={styles.slidesContainer}>
+                <h1 className={styles.h1title}><strong>Premium Bricks in Bangalore for Every Construction Project</strong>
+</h1>
+
+<h2>Wide Variety, Trusted Quality: Choose <strong>Flintstones</strong> for Your Brick Needs
+</h2><br />
                 <ImagesSlide title="Artificial Bricks" images={bricks}></ImagesSlide>
                 <ImagesSlide title="Concrete Bricks" images={concretes}></ImagesSlide>
                 <ImagesSlide title="Natural Bricks" images={naturals}></ImagesSlide>
             </div>
         </div>
-
-    );
+        </>);
 }

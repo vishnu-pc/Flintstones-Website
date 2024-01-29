@@ -28,6 +28,7 @@ import micro4 from "../../public/images/micros/micro4.jpg";
 import micro5 from "../../public/images/micros/micro5.jpg";
 import micro6 from "../../public/images/micros/micro6.jpg";
 import micro7 from "../../public/images/micros/micro7.jpg";
+import Head from 'next/head';
 
 const concretes = [
     concrete1,
@@ -66,13 +67,28 @@ const micros = [
 ];
 
 export default function Coating() {
-    return (
+    return (<>
+        <div>
+        <Head>
+        <title>Flintstones: Pioneering Excellence in Surface Coating Solutions in Bangalore</title>
+        <meta name="description" content="Transform surfaces with Flintstones' cutting-edge solutions - from waterproof concrete sealers to high gloss finishes. Explore our range of concrete, veneer, and texture surface coatings in Bangalore. Unleash the potential of Micros surface coating. Visit our Indira Nagar showroom for innovative solutions that redefine aesthetics and protection."/>
+        <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
+        <link rel="icon" href="images/Logo.svg"/>
+    </Head>
+        </div>
+    
         <div className={styles.wrapper}>
             <div>
                 <h1 className={styles.title}>Coating</h1>
                 <h1 className={styles.bigTitle}>Coating</h1>
             </div>
             <div className={styles.slidesContainer}>
+            <h1 className={styles.h1title}><strong>Revolutionize Surfaces: Leading the Way in Bangalore Surface Coating Technology
+</strong>
+</h1>
+
+<h2>Discover the Art of Protection and Elegance wit <strong>Flintstones</strong> Surface Coatings
+</h2><br />
                 <ImagesSlide title="Concretes" images={concretes}></ImagesSlide>
                 <ImagesSlide title="Veneers" images={concveneers}></ImagesSlide>
                 <ImagesSlide title="Textures" images={textures}></ImagesSlide>
@@ -80,5 +96,5 @@ export default function Coating() {
             </div>
         </div>
 
-    );
+        </>);
 }

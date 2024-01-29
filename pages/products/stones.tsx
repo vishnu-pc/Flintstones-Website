@@ -44,7 +44,7 @@ import stacking6 from "../../public/images/stackings/stacking6.jpg";
 import stacking7 from "../../public/images/stackings/stacking7.jpg";
 import stacking8 from "../../public/images/stackings/stacking8.jpg";
 import stacking9 from "../../public/images/stackings/stacking9.jpg";
-
+import Head from 'next/head';
 const basins = [
     basin1,
     basin2,
@@ -103,13 +103,28 @@ const stackings = [
 
 
 export default function Stones() {
-    return (
+    return (<>
+    <div>
+        <Head>
+            <title>Elevate Your Space with Natural Stones in Bangalore | Flintstones - Your Premier Stone Destination</title>
+            <meta name="description" content="Experience luxury at its finest with natural stones and designer basins in Bangalore. Flintstones brings you a curated selection, from black marble basins to gold mosaic tiles. Enhance your space with top-quality stones for floors and lattices. Explore our showroom in Indira Nagar for the ultimate in elegance and style."/>
+            <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
+            <link rel="icon" href="images/Logo.svg"/>
+        </Head>
+        </div>
+    
         <div className={styles.wrapper}>
             <div>
                 <h1 className={styles.title}>Stones</h1>
                 <h1 className={styles.bigTitle}>Stones</h1>
             </div>
             <div className={styles.slidesContainer}>
+            <h1 className={styles.h1title}><strong>Unleash Elegance: Natural Stones Collection in Bangalore</strong>
+</h1>
+
+<h2>Unearth Timeless Beauty: Natural Stones and Basins in Bangalore
+
+</h2><br />
                 <ImagesSlide title="Basins" images={basins}></ImagesSlide>
                 <ImagesSlide title="Floors" images={floors}></ImagesSlide>
                 <ImagesSlide title="Lattices" images={lattices}></ImagesSlide>
@@ -118,6 +133,5 @@ export default function Stones() {
                 <ImagesSlide title="Stackings" images={stackings}></ImagesSlide>
             </div>
         </div>
-
-    );
+        </>);
 }
