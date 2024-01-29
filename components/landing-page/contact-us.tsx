@@ -4,9 +4,9 @@ import {init, send} from '@emailjs/browser';
 import styles from '../../styles/components/landing-page/contact-us.module.css';
 
 export default function ContactUs() {
-    init('QF3SvIB3v04g8EwuB');
-    let serviceId = 'service_6zqc1ga';
-    let templateId = 'template_46f68qj';
+    init('Umo2eevxzv3CLTiwg');
+    let serviceId = 'service_m0qvqz2';
+    let templateId = 'template_zyi275n';
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -28,12 +28,23 @@ export default function ContactUs() {
         send(serviceId, templateId, payload)
             .then(() => {
                 console.log('email success');
+                showAlert('Email sent successfully!', 'success');
             })
-            .catch((err: any) => console.error('error', err));
-        setName(' ');
-        setEmail(' ');
-        setNumber(' ');
-        setMessage(' ');
+            .catch((err: any) => {
+                console.error('error', err);
+                showAlert('Failed to send email. Please try again.', 'error');
+            });
+    
+        // Clear input fields after sending email
+        setName('');
+        setEmail('');
+        setNumber('');
+        setMessage('');
+    };
+    
+    const showAlert = (message: string, type: 'success' | 'error') => {
+        // You can customize this alert based on your UI library or implementation
+        alert(`${type.toUpperCase()}: ${message}`);
     };
     return (
         <div className="contact-us-page">
