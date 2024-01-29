@@ -16,7 +16,8 @@ import EngineeredStoneCat from '../public/images/engineered_catalogue.jpg';
 import ConcreteFacadesCat from '../public/images/concrete_catalogue.jpg';
 import BricksCat from '../public/images/bricks_catalogue.jpg';
 import Link from 'next/link';
-
+import logo from '../public/images/flintstones_logo.png';
+import exp from '../public/images/external-link.png';
 
 const catalogues = [
     {
@@ -109,21 +110,33 @@ export default function Products() {
             <section className={styles.categoriesSection}>
                 <h1 className={styles.header}>Categories</h1>
                 <div className={styles.categoriesWrapper}>
-                    {
-                        categories.map(category => (
-                            <Link key={category.title} href={`/products/${category.link}`}>
-                                <div className={styles.categoryWrapper} >
-                                    <div className={styles.categoryImageWrapper}>
-                                        <Image objectFit="cover" layout="fill" src={category.image}
-                                               alt={category.title}
-                                               className={styles.categoryImage}></Image>
-                                    </div>
-                                    <h3 className={styles.categoryTitle}>{category.title}</h3>
-                                </div>
-                            </Link>
-                        ))
-                    }
-                </div>
+  {categories.map((category) => (
+    <Link key={category.title} href={`/products/${category.link}`}>
+      <div className={styles.categoryWrapper}>
+        <div className={styles.categoryImageWrapper}>
+          <Image
+            objectFit="cover"
+            layout="fill"
+            src={category.image}
+            alt={category.title}
+            className={styles.categoryImage}
+          ></Image>
+          <div className={styles.overlay}>
+            <Image alt="Overlay Image" width="100" height="100" src={logo}></Image>
+           
+          </div>
+        </div>
+        <h3 className={styles.categoryTitle}>
+          {category.title}
+          <span className={styles.imageWrapper}>
+    <Image alt="Overlay Image" width="40" height="40" src={exp} />
+  </span>
+        </h3>
+      </div>
+    </Link>
+  ))}
+</div>
+
             </section>
             <section>
                 <HeaderWithLogo header="COULD NOT FIND WHAT YOU'RE LOOKING FOR?"></HeaderWithLogo>

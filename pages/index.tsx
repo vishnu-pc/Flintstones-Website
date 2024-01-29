@@ -43,12 +43,7 @@ const Home: NextPage = () => {
   }, []); 
     return (
         <div className={styles.container}>
-            <Head>
-                <title>Flintstones Bangalore- Leading Stones Manufacturer </title>
-                <meta name="description" content="Flintstones Bangalore official website"/>
-                <meta name="google-site-verification" content="pUMNcxdLDe57HiuLmq5c1gLv3qtmEzkaHn7s8E92z-M" />
-                <link rel="icon" href="images/Logo.svg"/>
-            </Head>
+            
 
             <section className={styles.hero}>
                 {/* <video className={styles.backgroundVideo} autoPlay loop muted>
@@ -88,11 +83,8 @@ const Home: NextPage = () => {
                     <>
                     <div className={styles.headingContainer}>
                         <h1 className={`${styles.heading} raleway`}>Flintstones</h1>
-                        <span className={styles.logoContainer}>
-                            <Image className={styles.logo} alt="Logo" src={Logo}/>
-                        </span>
                     </div>
-                    <h2 className={styles.subHeading}>Live in luxury</h2>
+                    <h2 className={styles.subHeading}>Unveiling Timeless Elegance with Natural Stone Wall Cladding in Bangalore</h2>
                     </>}
                    
                 </div>

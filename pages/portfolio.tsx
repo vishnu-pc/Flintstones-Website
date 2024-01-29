@@ -24,51 +24,51 @@ const images = [
     },
     {
         image: img2,
-        caption: 'CRED,Banglore',
+        caption: 'CRED, Banglore',
     },
     {
         image: img3,
-        caption: 'Gerald,Hossur',
+        caption: 'Gerald, Hossur',
     },
     {
         image: img4,
-        caption: 'Google,Bangalore',
+        caption: 'Google, Bangalore',
     },
     {
         image: img5,
-        caption: 'Google,Bangalore',
+        caption: 'Google, Bangalore',
     },
     {
         image: img6,
-        caption: 'Google,Hyderabad',
+        caption: 'Google, Hyderabad',
     },
     {
         image: img7,
-        caption: 'Residential,Bangalore',
+        caption: 'Residential, Bangalore',
     },
     {
         image: img8,
-        caption: 'Manoj,HSR layout',
+        caption: 'Manoj, HSR layout',
     },
     {
         image: img9,
-        caption: 'Oracale,Bangalore',
+        caption: 'Oracale, Bangalore',
     },
     {
         image: img10,
-        caption: 'Saswati,HSR layout',
+        caption: 'Saswati, HSR layout',
     },
     {
         image: img11,
-        caption: 'Soumya,Banashankri',
+        caption: 'Soumya, Banashankri',
     },
     {
         image: img12,
-        caption: 'Sumadura Group,Bangalore',
+        caption: 'Sumadura Group, Bangalore',
     },
     {
         image: img13,
-        caption: 'Vinay,Yelahanka',
+        caption: 'Vinay, Yelahanka',
     },
 ];
 const contentStyle = {
@@ -83,46 +83,22 @@ export default function Portfolio() {
     
     return (
         <>
-            <section className={styles.section}  style={{height:"120vh", paddingTop:"1%"}}>
-            <h1 style={{position:"absolute", top:"10%"}}className={styles.header}>Our projects</h1>
-              <div style={{height:"50vh", position:"absolute", top:"25%"}}>
-                  
-                <Carousel  >
-                
-                            
-                    {
-                        images.map((img, idx) => (
-                           <>
-                           <h3>{img.caption}</h3>
-                            <div key={idx} className={styles.carouselItem} >
-                                <div className={styles.imageWrapper}>
-                                    <Image  width="1000" height="1000"objectFit="cover" src={img.image} alt={img.caption}/>
-                                </div>
-                                
+            <section className={styles.section} style={{ height: "auto", paddingTop: "1%" }}>
+                <h1 style={{ position: "relative", top: "10%" }} className={styles.header}>Our projects</h1>
+                <div className="container">
+                    <div className="row">
+                        {/* <div className="col-md-4"> */}
+                        {images.map((img, idx) => (
+                        <div key={idx} className="col-md-4">
+                            <h5>{img.caption}</h5>
+                            <div className={styles.imageWrapper}>
+                                <Image width={1000} height={1000} objectFit="cover" src={img.image} alt={img.caption} />
                             </div>
-                            <br/>
-                            <br/>
-                             
-                           </>
-                        ))
-                    }
-      
-                     
-                </Carousel>
+                        </div>
+                    ))}
+                        {/* </div> */}
+                    </div>
                 </div>
-
-                
-                
-            </section>
-            {/* <div  style={{position:"absolute", top:"150%"}}className={styles.quotePage}>
-            <div className={styles.quoteWrapper}>
-                <p className={styles.quote}>
-                    &quot; For a house to feel successfully like home, the objects in it must
-                    communicate with one another, respond and balance one another out. &quot; -
-                    Andree Putman
-                </p>
-            </div>
-                </div> */}
                 <div className={styles.quoteWrapper}>
                 <p className={styles.quote}>
                     &quot; For a house to feel successfully like home, the objects in it must
@@ -130,6 +106,9 @@ export default function Portfolio() {
                     Andree Putman
                 </p>
             </div>
+                </section>
+                   
+            
         </>
     );
 }
