@@ -1,0 +1,113 @@
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.header {
+    font-size: 50px;
+    color: rgb(201, 160, 48);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.carousel {
+    /* height: 70vh; */
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.carouselItem {
+    padding: 0 20%;
+    width: 100%;
+}
+
+.imageWrapper {
+    /* position: relative; */
+    /* height: 70vh; */
+    width: 100%;
+}
+
+.quoteWrapper {
+    min-height: 30vh;
+    background-image: url('/images/Background.webp');
+    background-size: 150% 150%;
+    animation-name: background-shift-about-us;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10%;
+}
+.quote {
+    color: rgb(201, 160, 48);
+    font-size: 30px;
+}
+
+
+.quotePage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+    background: url('/images/Background.webp');
+    background-color: #1d1d1b;
+    background-size: 120% 120%;
+    height: 50vh;
+
+    animation-name: background-shift-about-us;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-shift-about-us {
+    0% {
+        background-position-x: 0;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust the minmax and other properties as needed */
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.gridItem {
+    text-align: center;
+}
+
+.imageWrapper {
+    overflow: hidden;
+    border-radius: 8px; /* Add any styling for the image wrapper */
+}

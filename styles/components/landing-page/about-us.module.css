@@ -24,16 +24,18 @@
     animation-name: background-shift-about-us;
     animation-duration: 20s;
     animation-iteration-count: infinite;
+    text-align: justify;
 }
 
 .aboutUsText {
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
 }
 
 @media only screen and (min-width: 768px) {
     .aboutUsText {
-        font-size: 26px;
+        font-size: 20px;
+        text-align: justify;
     }
 }
 
@@ -44,7 +46,9 @@
     }
 
     .aboutUsText {
-        font-size: 26px;
+        font-size: 20px;
+        text-align: justify;
+        
     }
 }
 

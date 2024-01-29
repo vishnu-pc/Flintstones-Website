@@ -1,5 +1,5 @@
 .hero {
-    height: 100vh;
+    height: 50vh;
     position: relative;
     width: 100%;
 }
@@ -31,3 +31,6 @@
         font-size: 110px;
     }
 }
+/* .navbar-brand{
+    margin: 0px 0px 0px 150px;
+  } */

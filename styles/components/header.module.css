@@ -16,9 +16,21 @@
     padding: 10px 10px;
     cursor: pointer;
     font-weight: bold;
-    font-size:10px
+    font-size:10px;
+    color:#fff;
+    text-align:center;
 }
-
+.navLink button{
+    padding: 10px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:10px;
+    color:#fff;
+    text-align:center;
+}
+.imglogo{
+    display: block !important;
+}
 .navLink:hover {
     transition: background-color .6s;
     color: black;
@@ -31,7 +43,7 @@
     }
 
     .navLink {
-        padding: 10px 50px;
+        padding: 10px 30px;
         font-size:18px
     }
 }
@@ -42,6 +54,44 @@
     }
 
     .navLink {
-        padding: 10px 90px;
+        padding: 10px 30px;
     }
 }
+.butcon{
+    background-color: #ffce00;
+    font-weight:bold;
+    border-radius: 20px 0px 20px 0px;
+}
+.butcon p{
+    font-size:17px;
+    color: #000;
+    font-weight:700;
+    margin-bottom: 1px;
+}
+.navbrand{
+    margin-left: 100px;
+}
+.collapse .show{
+    background-color: #fff; /* Set your desired background color */
+  }
+  .navbar-toggler{
+    background:blue;
+  }
+
+  .navbar-toggler {
+    background-color: blue; /* Set your desired background color */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: yellow; /* Set your desired background color */
+  }
+  
+  .expandedNavbar {
+    background: #000;
+    width:200px;
+  }
+
+  .navbarnd{
+    margin: 0px 0px 0px 100px;
+  }
+  
