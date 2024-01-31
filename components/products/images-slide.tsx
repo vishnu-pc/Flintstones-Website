@@ -520,7 +520,6 @@ export default function ImagesSlide(props: Props) {
           <Modal.Footer>
          <button onClick={sendMail} type='submit' style={{color:"#000"}}>Submit</button>
          <button onClick={handleModal} type='submit' style={{color:"#000"}}>Close</button>
-            {/* Add additional buttons if needed */}
           </Modal.Footer>
         </form>
       </Modal>
