@@ -7,8 +7,7 @@ import Cookie from "js-cookie"
 import React,{ useState } from 'react';
 import exp from '../../public/images/external-link-white.png';
 import Link from 'next/link';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+import { Modal, Button } from 'react-bootstrap';
 import {init, send} from '@emailjs/browser';
 
  //import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
@@ -520,11 +519,12 @@ export default function ImagesSlide(props: Props) {
                 </Modal.Body>
           <Modal.Footer>
           
-          <Button type="submit" as="button" variant="dark" onClick={sendMail}>Submit</Button>
-
-            <Button variant="dark" onClick={handleModal} >
-              Close
-            </Button>
+          <Button variant="dark" onClick={handleModal}>
+    Close
+  </Button>
+  <Button variant="dark" onClick={sendMail}>
+    Submit
+  </Button>
             {/* Add additional buttons if needed */}
           </Modal.Footer>
         </form>
