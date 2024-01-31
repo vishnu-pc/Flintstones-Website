@@ -69,9 +69,6 @@ export default function Portfolio() {
         <h1 className="hiro-title font-uxl font-xxxl-onMobile font-weight-medium mb-4 font-weight-bold te">
           Our results are second to none!
         </h1>
-        <p className="font-weight-light font-regular-onMobile">
-            Many of Indias most respected hyper growth startups and unicorn brands trust us to grow their digital businesses.
-        </p>
       </div>
     </div>
 
