@@ -60,6 +60,9 @@ const Header: React.FC = () => {
               <Link href={'/'}>
                 <p className={styles.navLink}>Home</p>
               </Link>
+               <Link href={'/about'}>
+          <p className={styles.navLink}>About</p>
+        </Link>
         <Link href={'/products'}>
           <p className={styles.navLink}>Products</p>
         </Link>
