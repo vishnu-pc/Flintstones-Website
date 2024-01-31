@@ -1,5 +1,6 @@
-import type {NextPage} from 'next';
 import Head from 'next/head';
+import type {NextPage} from 'next';
+
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Logo from '../public/images/Logo.svg';
@@ -41,7 +42,14 @@ const Home: NextPage = () => {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []); 
-    return (
+    return (<>
+    <Head>
+        <title>Flintstones: Your Premier Destination for Bricks and Construction Tiles in Bangalore</title>
+        <meta name="description" content="Find top-quality bricks and construction tiles in Bangalore at Flintstones. Explore our diverse range, conveniently located near you. Discover the finest brick store near me for all your construction needs. Transform your space with Flintstones - the ultimate destination for premium construction materials." />
+        {/* Add canonical tag */}
+        <link rel="canonical" href="https://www.flintstones.in/" />
+      </Head>
+    
         <div className={styles.container}>
             
 
@@ -122,6 +130,7 @@ const Home: NextPage = () => {
             <Projects></Projects>
             <ContactUs></ContactUs>
         </div>
+        </>
     );
 };
 
