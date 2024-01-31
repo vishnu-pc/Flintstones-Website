@@ -70,8 +70,7 @@ export default function Portfolio() {
           Our results are second to none!
         </h1>
         <p className="font-weight-light font-regular-onMobile">
-        Many of India&apos;s most respected hyper growth startups and unicorn brands trust us to grow their digital businesses.
-
+            Many of Indias most respected hyper growth startups and unicorn brands trust us to grow their digital businesses.
         </p>
       </div>
     </div>
