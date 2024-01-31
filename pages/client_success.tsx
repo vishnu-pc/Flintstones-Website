@@ -70,7 +70,8 @@ export default function Portfolio() {
           Our results are second to none!
         </h1>
         <p className="font-weight-light font-regular-onMobile">
-          Many of India's most respected hyper-growth start-ups and unicorn brands trust us to grow their digital businesses.
+        Many of India&apos;s most respected hyper-growth start-ups and unicorn brands trust us to grow their digital businesses.
+
         </p>
       </div>
     </div>
@@ -387,7 +388,8 @@ export default function Portfolio() {
 
     <div className="container mb-2" style={{ background: "#fff", paddingTop: "1%",borderRadius: "20px" }}>
       <div className="about-slide-heading-section-op2">
-        <h1 style={{ color: "#000", padding: "1%",textAlign: "center",fontWeight:"bold" }}>Pharma & Hospitals</h1>
+        <h1 style={{ color: "#000", padding: "1%",textAlign: "center",fontWeight:"bold" }}>Pharma &amp; Hospitals
+</h1>
       </div>
       <div>
         <div className="container">
