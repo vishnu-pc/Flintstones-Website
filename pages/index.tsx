@@ -44,8 +44,8 @@ const Home: NextPage = () => {
   }, []); 
     return (<>
     <Head>
-        <title>Flintstones: Your Premier Destination for Bricks and Construction Tiles in Bangalore</title>
-        <meta name="description" content="Find top-quality bricks and construction tiles in Bangalore at Flintstones. Explore our diverse range, conveniently located near you. Discover the finest brick store near me for all your construction needs. Transform your space with Flintstones - the ultimate destination for premium construction materials." />
+        <title>Flintstones: Top Choice for Bricks & Tiles in Bangalore</title>
+        <meta name="description" content="Discover high-quality bricks and construction tiles in Bangalore at Flintstones. Explore our diverse range conveniently located near you. Find the finest brick store for all your construction needs. Transform your space with Flintstones, the ultimate destination for premium construction materials." />
         {/* Add canonical tag */}
         <link rel="canonical" href="https://www.flintstones.in/" />
       </Head>
