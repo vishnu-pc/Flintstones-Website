@@ -4,6 +4,7 @@ import styles from '../styles/About.module.css';
 import HeaderWithLogo from '../components/header-with-logo';
 import ContactUs from '../components/landing-page/contact-us';
 import {init, send} from '@emailjs/browser';
+import styles from '../styles/globals.css';
 
 const Contact: NextPage = () => {
   init('Umo2eevxzv3CLTiwg');
