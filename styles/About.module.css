@@ -89,7 +89,7 @@
 
 .ddiv{
   width: 100%;
-  background: #353535;
+  background-color: #353535 !important;
 }
 .form-group input{
   width: 100%;
