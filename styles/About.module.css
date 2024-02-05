@@ -86,3 +86,21 @@
         height: 60vh;
     }
 }
+
+.ddiv{
+  width: 100%;
+  background: #353535;
+}
+.form-group input{
+  width: 100%;
+  background:#353535;
+  color:#fff;
+}
+.form-group label{
+  padding-top:8px
+}
+.btn .btn-warning{
+  color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
