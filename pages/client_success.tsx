@@ -466,11 +466,7 @@ export default function Portfolio() {
                                 <img src= 'images/Logo/Hospitality/Kartik-Mitahi-Shop-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
-                        <div className='col-6 col-md-3 trusted-partner-col'>
-                            <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Hospitality/lg.png' alt="Partner 4" height={100}/>
-                            </div>
-                        </div>
+                       
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
                                 <img src= 'images/Logo/Hospitality/Meghana-Foods-Logo.png' alt="Partner 4" height={100}/>
