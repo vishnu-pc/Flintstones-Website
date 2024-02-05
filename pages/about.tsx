@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import type {NextPage} from 'next';
 import styles from '../styles/About.module.css';
 import HeaderWithLogo from '../components/header-with-logo';
@@ -5,6 +6,12 @@ import HeaderWithLogo from '../components/header-with-logo';
 const About: NextPage = () => {
     return (
         <>
+        <Head>
+        <title>Flintstones: Your Local Destination for Luxury Bricks and Surface Coating Excellence</title>
+        <meta name="description" content="Experience luxury like never before at Flintstones, your go-to bricks and surface coating shop near you. Discover a curated selection of opulent bricks and cutting-edge surface coatings, all conveniently available at our store. Elevate your space with Flintstones - where sophistication meets excellence." />
+        {/* Add canonical tag */}
+        <link rel="canonical" href="https://www.flintstones.in/" />
+      </Head>
             <HeaderWithLogo header="About us"></HeaderWithLogo>
             <section>
                 <div className={styles.aboutCard}>
