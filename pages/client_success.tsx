@@ -92,7 +92,7 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Infosys-Logo.png' alt="Partner 3" height={100}/>
+                                <img src= 'images/Logo/Corporates/Infosys-logo.png' alt="Partner 3" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
@@ -123,17 +123,17 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Targray-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Targray-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/IBM-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/IBM-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Microsoft-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Microsoft-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
@@ -143,7 +143,7 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/CRED-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Cred-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
@@ -153,27 +153,27 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Intel-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Intel-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Societe-Generale-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Societe-Generale-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Marvell-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Marvell-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Stibo-Systems-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Stibo-Systems-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Apptio-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Apptio-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
@@ -183,42 +183,42 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Koch-Industries-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Koch-Industries-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Payal-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Payal-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Verizon-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Verizon-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Mckinsey-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/McKinsey-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Qualcomm-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Qualcomm-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Sutherland-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Sutherland-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Shell-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Shell-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Comcast-India-Engineering-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Comcast-India-Engineering-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
@@ -228,47 +228,47 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Suntec-Business-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Suntec-Business-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/DSM-Shared-Services-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/DSM-Shared-Services-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Warner-Brothers-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Warner-Brothers-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/TE-Connectivity-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/TE-Connectivity-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                        <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Wells-Fargo-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Wells-Fargo-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Xiaomi-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Xiaomi-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Ogilvy-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Ogilvy-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Amazon-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Amazon-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Akamai-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Akamai-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
@@ -283,17 +283,17 @@ export default function Portfolio() {
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Standard-Chartered-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Standard-Chartered-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Manhattan-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Manhattan-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                         <div className='col-6 col-md-3 trusted-partner-col'>
                             <div className='trusted-partner-logo' style={{  paddingTop: "10%",textAlignLast: "center"}}>
-                                <img src= 'images/Logo/Corporates/Vikas-Telecom-logo.png' alt="Partner 4" height={100}/>
+                                <img src= 'images/Logo/Corporates/Vikas-Telecom-Logo.png' alt="Partner 4" height={100}/>
                             </div>
                         </div>
                     </div>
