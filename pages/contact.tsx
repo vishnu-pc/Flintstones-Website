@@ -64,7 +64,7 @@ const Contact: NextPage = () => {
         height="500"
         frameBorder="0"
         style={{ border: 0 }}
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.436641206392!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a1ed3235f%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1642048723215!5m2!1sen!2sus"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.0061843994171!2d77.63793903098518!3d12.970268849505086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17bb7227497f%3A0x3084b4633af4fa97!2sFlintstones!5e0!3m2!1sen!2sin!4v1650678432883!5m2!1sen!2sin"
         allowFullScreen
       ></iframe>
     </div>
