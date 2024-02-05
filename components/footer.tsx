@@ -22,6 +22,7 @@ export default function Footer() {
                         <li><a href={'/about'}>About</a></li>
                         <li><a href={'/products'}>Products</a></li>
                         <li><a href={'/portfolio'}>Portfolio</a></li>
+                        <li><a href={'/client_success'}>Client Success</a></li>
                         <li><a href={'/moodboard'}>Moodboard</a></li>
                         </ul>
                         
