@@ -154,7 +154,7 @@ a {
   /* text-align: center; */
   transition: all 1s;
 }
-.ddiv{
+/* .ddiv{
   width: 100%;
   background: #353535;
 }
@@ -170,7 +170,7 @@ a {
   color: #fff;
     font-size: 20px;
     font-weight: 900;
-}
+} */
 .navbar-toggler{
   border: 2px solid #fff;
 }
